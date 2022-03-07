@@ -1,0 +1,826 @@
+<?xml version='1.0' ?>
+<!--
+  Changes:
+    + All Languages Menu
+-->
+<xomArchive>
+  <xomObjects>
+    <XDataBank id='id-0'>
+      <Section>0</Section>
+      <StringResources href='FETXT.Japanese'/>
+      <StringResources href='FETXT.Korean'/>
+      <StringResources href='FETXT.Chinese'/>
+      <ContainerResources href='WXFEP.SelectLanguage'/>
+      <ContainerResources href='WXFEP.SelectLanguageList'/>
+    </XDataBank>
+
+    <XStringResourceDetails id='FETXT.Japanese'>
+      <Value>Japanese</Value>
+      <Name>FETXT.Japanese</Name>
+      <Flags>96</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='FETXT.Korean'>
+      <Value>Korean</Value>
+      <Name>FETXT.Korean</Name>
+      <Flags>96</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='FETXT.Chinese'>
+      <Value>Chinese</Value>
+      <Name>FETXT.Chinese</Name>
+      <Flags>96</Flags>
+    </XStringResourceDetails>
+
+    <XContainerResourceDetails id='WXFEP.SelectLanguage'>
+      <Value href='WXFEP.SelectLanguage-0'/>
+      <Name>WXFEP.SelectLanguage</Name>
+      <Flags>81</Flags>
+    </XContainerResourceDetails>
+    <WXFE_MenuDescription id='WXFEP.SelectLanguage-0'>
+      <BorderType>41</BorderType>
+      <BorderAutoSize>false</BorderAutoSize>
+      <BorderEdgeSize>0</BorderEdgeSize>
+      <Messages_MenuGoingAway>WXMsg.PlaySample$click3</Messages_MenuGoingAway>
+      <Messages_CancelPressed>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_CancelPressed>
+      <DefaultSelectedItem>SelectLanguageList</DefaultSelectedItem>
+      <FullScreenColour r='64' g='45' b='24' a='90' />
+      <Position x='0' y='0' z='0' />
+      <Scale x='90' y='115' z='0' />
+      <Orientation x='0' y='0' z='-0.03' />
+      <Anim_Incoming>9</Anim_Incoming>
+      <Anim_Outgoing>20</Anim_Outgoing>
+      <Anim_Spot></Anim_Spot>
+      <Audio_Incoming>17</Audio_Incoming>
+      <Audio_Outgoing>0</Audio_Outgoing>
+      <Audio_Spot></Audio_Spot>
+      <Delay_Incoming>0</Delay_Incoming>
+      <Delay_Outgoing>0</Delay_Outgoing>
+      <FontSizeOverride>0</FontSizeOverride>
+      <LayerOffset>1</LayerOffset>
+      <LOCKED>false</LOCKED>
+      <ItemName>Main Menu</ItemName>
+      <EnableId></EnableId>
+      <ControllerId>255</ControllerId>
+      <ChildrenItems href='WXFEP.SelectLanguage-1'/>
+      <ChildrenItems href='WXFEP.SelectLanguage-2'/>
+      <ChildrenItems href='WXFEP.SelectLanguage-3'/>
+      <ChildrenItems href='WXFEP.SelectLanguage-4'/>
+    </WXFE_MenuDescription>
+    <WXFE_ListControlDesc id='WXFEP.SelectLanguage-1'>
+      <GameDataId>WXFEP.SelectLanguageList</GameDataId>
+      <BorderSize>5</BorderSize>
+      <AutoScroll>false</AutoScroll>
+      <LoopContents>0</LoopContents>
+      <SortContents>false</SortContents>
+      <Border_Normal>0</Border_Normal>
+      <Border_Disabled>0</Border_Disabled>
+      <Border_Highlight>0</Border_Highlight>
+      <Arrow_ScaleX>32</Arrow_ScaleX>
+      <Arrow_ScaleY>12</Arrow_ScaleY>
+      <Arrow_Colour_Normal r='81' g='49' b='0' a='255' />
+      <Arrow_Colour_Highlight r='255' g='255' b='255' a='255' />
+      <Arrow_Colour_ShadowNormal r='255' g='255' b='255' a='255' />
+      <Arrow_Colour_ShadowHighlight r='0' g='0' b='0' a='255' />
+      <IndexID></IndexID>
+      <ToolTipId></ToolTipId>
+      <Navigate_Left></Navigate_Left>
+      <Navigate_Right></Navigate_Right>
+      <Navigate_Up></Navigate_Up>
+      <Navigate_Down></Navigate_Down>
+      <Anim_Activated>0</Anim_Activated>
+      <Anim_Highlighted>0</Anim_Highlighted>
+      <Audio_Activated>0</Audio_Activated>
+      <Audio_Highlighted>3</Audio_Highlighted>
+      <Position x='0' y='-30' z='0' />
+      <Scale x='100' y='63' z='0' />
+      <Orientation x='0' y='0' z='0' />
+      <Anim_Incoming>0</Anim_Incoming>
+      <Anim_Outgoing>0</Anim_Outgoing>
+      <Anim_Spot></Anim_Spot>
+      <Audio_Incoming>0</Audio_Incoming>
+      <Audio_Outgoing>0</Audio_Outgoing>
+      <Audio_Spot></Audio_Spot>
+      <Delay_Incoming>0</Delay_Incoming>
+      <Delay_Outgoing>0</Delay_Outgoing>
+      <FontSizeOverride>0</FontSizeOverride>
+      <LayerOffset>1</LayerOffset>
+      <LOCKED>false</LOCKED>
+      <ItemName>SelectLanguageList</ItemName>
+      <EnableId></EnableId>
+      <ControllerId>255</ControllerId>
+    </WXFE_ListControlDesc>
+    <WXFE_ImageViewDesc id='WXFEP.SelectLanguage-2'>
+      <Border>0</Border>
+      <ImageId>WXFE.Scratches2:1</ImageId>
+      <DefaultImageId></DefaultImageId>
+      <Colour r='255' g='255' b='255' a='20' />
+      <WaitTime>0</WaitTime>
+      <Position x='22' y='-63' z='0' />
+      <Scale x='70' y='90' z='0' />
+      <Orientation x='0' y='0' z='0' />
+      <Anim_Incoming>0</Anim_Incoming>
+      <Anim_Outgoing>0</Anim_Outgoing>
+      <Anim_Spot></Anim_Spot>
+      <Audio_Incoming>0</Audio_Incoming>
+      <Audio_Outgoing>0</Audio_Outgoing>
+      <Audio_Spot></Audio_Spot>
+      <Delay_Incoming>0</Delay_Incoming>
+      <Delay_Outgoing>0</Delay_Outgoing>
+      <FontSizeOverride>0</FontSizeOverride>
+      <LayerOffset>-1</LayerOffset>
+      <LOCKED>false</LOCKED>
+      <ItemName>scratches6</ItemName>
+      <EnableId></EnableId>
+      <ControllerId>255</ControllerId>
+    </WXFE_ImageViewDesc>
+    <WXFE_TextBoxDesc id='WXFEP.SelectLanguage-3'>
+      <FontName>FE.Font</FontName>
+      <TextGameDataId>FETXT.SelectLanguage</TextGameDataId>
+      <Border_Normal>0</Border_Normal>
+      <Border_Disabled>0</Border_Disabled>
+      <Border_Highlight>0</Border_Highlight>
+      <Border_Active>0</Border_Active>
+      <Justification>4</Justification>
+      <BorderSize>0</BorderSize>
+      <AutoScrollSpeed>0</AutoScrollSpeed>
+      <AutoScrollDelay>2000</AutoScrollDelay>
+      <AutoScale>true</AutoScale>
+      <Colour_Front>24</Colour_Front>
+      <Colour_Front_Edit>2</Colour_Front_Edit>
+      <Colour_Front_Highlight>2</Colour_Front_Highlight>
+      <Colour_Front_Disabled>19</Colour_Front_Disabled>
+      <Colour_Back_Highlight>2</Colour_Back_Highlight>
+      <Colour_Back_Disabled>2</Colour_Back_Disabled>
+      <Colour_Back_Edit>2</Colour_Back_Edit>
+      <Colour_Back>3</Colour_Back>
+      <TextAnim>4</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <ToolTipId></ToolTipId>
+      <Navigate_Left></Navigate_Left>
+      <Navigate_Right></Navigate_Right>
+      <Navigate_Up></Navigate_Up>
+      <Navigate_Down></Navigate_Down>
+      <Anim_Activated>1</Anim_Activated>
+      <Anim_Highlighted>3</Anim_Highlighted>
+      <Audio_Activated>0</Audio_Activated>
+      <Audio_Highlighted>0</Audio_Highlighted>
+      <Position x='0' y='97' z='0' />
+      <Scale x='80' y='20' z='1' />
+      <Orientation x='0' y='0' z='0' />
+      <Anim_Incoming>0</Anim_Incoming>
+      <Anim_Outgoing>0</Anim_Outgoing>
+      <Anim_Spot></Anim_Spot>
+      <Audio_Incoming>0</Audio_Incoming>
+      <Audio_Outgoing>0</Audio_Outgoing>
+      <Audio_Spot></Audio_Spot>
+      <Delay_Incoming>0</Delay_Incoming>
+      <Delay_Outgoing>0</Delay_Outgoing>
+      <FontSizeOverride>20</FontSizeOverride>
+      <LayerOffset>0</LayerOffset>
+      <LOCKED>false</LOCKED>
+      <ItemName>PopUp Title</ItemName>
+      <EnableId></EnableId>
+      <ControllerId>255</ControllerId>
+    </WXFE_TextBoxDesc>
+    <WXFE_ImageViewDesc id='WXFEP.SelectLanguage-4'>
+      <Border>0</Border>
+      <ImageId>WXFE.PopUpDivide</ImageId>
+      <DefaultImageId></DefaultImageId>
+      <Colour r='255' g='255' b='255' a='255' />
+      <WaitTime>0</WaitTime>
+      <Position x='0' y='67' z='0' />
+      <Scale x='70' y='8' z='1' />
+      <Orientation x='0' y='0' z='0' />
+      <Anim_Incoming>0</Anim_Incoming>
+      <Anim_Outgoing>0</Anim_Outgoing>
+      <Anim_Spot></Anim_Spot>
+      <Audio_Incoming>0</Audio_Incoming>
+      <Audio_Outgoing>0</Audio_Outgoing>
+      <Audio_Spot></Audio_Spot>
+      <Delay_Incoming>0</Delay_Incoming>
+      <Delay_Outgoing>0</Delay_Outgoing>
+      <FontSizeOverride>0</FontSizeOverride>
+      <LayerOffset>-1</LayerOffset>
+      <LOCKED>false</LOCKED>
+      <ItemName>DIVIDE1</ItemName>
+      <EnableId></EnableId>
+      <ControllerId>255</ControllerId>
+    </WXFE_ImageViewDesc>
+
+    <XContainerResourceDetails id='WXFEP.SelectLanguageList'>
+      <Value href='WXFEP.SelectLanguageList-0'/>
+      <Name>WXFEP.SelectLanguageList</Name>
+      <Flags>81</Flags>
+    </XContainerResourceDetails>
+
+    <WXFE_ListBoxContents id='WXFEP.SelectLanguageList-0'>
+      <Rows href='WXFEP.SelectLanguageList-2'/> <!-- English  -->
+      <Rows href='WXFEP.SelectLanguageList-4'/> <!-- American -->
+      <Rows href='WXFEP.SelectLanguageList-6'/> <!-- Czech    -->
+      <Rows href='WXFEP.SelectLanguageList-8'/> <!-- French   -->
+      <Rows href='WXFEP.SelectLanguageList-10'/><!-- German   -->
+      <Rows href='WXFEP.SelectLanguageList-12'/><!-- Italian  -->
+      <Rows href='WXFEP.SelectLanguageList-14'/><!-- Japanese -->
+      <Rows href='WXFEP.SelectLanguageList-16'/><!-- Polish   -->
+      <Rows href='WXFEP.SelectLanguageList-18'/><!-- Russian  -->
+      <Rows href='WXFEP.SelectLanguageList-20'/><!-- Spanish  -->
+      <Rows href='WXFEP.SelectLanguageList-22'/><!-- Slovak   -->
+      <Rows href='WXFEP.SelectLanguageList-24'/><!-- Korean   -->
+      <Rows href='WXFEP.SelectLanguageList-26'/><!-- Chinese  -->
+    </WXFE_ListBoxContents>
+
+    <!-- (Gap) -->
+    <WXFE_GapColumns id='WXFEP.SelectLanguageList-1'>
+      <GapWidth>2</GapWidth>
+      <ExpandToFitAvailableSpace>true</ExpandToFitAvailableSpace>
+      <GapType>0</GapType>
+      <Colour_Normal r='255' g='255' b='255' a='255' />
+      <Colour_Highlight r='255' g='255' b='255' a='255' />
+      <Colour_Disabled r='128' g='128' b='128' a='255' />
+    </WXFE_GapColumns>
+
+    <!-- English -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-2'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$English</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-3'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-3'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.English</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- American -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-4'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$American</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-5'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-5'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.AmericanEnglish</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Czech -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-6'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Czech</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-7'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-7'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Czech</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- French -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-8'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$French</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-9'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-9'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.French</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- German -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-10'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$German</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-11'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-11'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.German</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Italian -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-12'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Italian</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-13'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-13'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Italian</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Japanese -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-14'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Japanese</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-15'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-15'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Japanese</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Polish -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-16'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Polish</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-17'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-17'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Polish</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Russian -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-18'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Russian</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-19'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-19'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Russian</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Spanish -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-20'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Spanish</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-21'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-21'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Spanish</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Slovak -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-22'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Slovak</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-23'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-23'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Slovak</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Korean -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-24'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Korean</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-25'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-25'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Korean</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+
+    <!-- Chinese -->
+    <WXFE_ListBoxRows id='WXFEP.SelectLanguageList-26'>
+      <Border_Normal>0</Border_Normal>
+      <Border_Highlight>11</Border_Highlight>
+      <Border_Disabled>0</Border_Disabled>
+      <BorderFitContents>true</BorderFitContents>
+      <Anim_Highlight>26</Anim_Highlight>
+      <Anim_Clicked>1</Anim_Clicked>
+      <Messages_Selected>FE.SetLanguage$Chinese</Messages_Selected>
+      <Messages_Selected>WXMsg.KillPopUpNamed$WXFEP.SelectLanguage</Messages_Selected>
+      <Messages_Selected>FE.ChangeMenu$WXFE.ChangingLanguage</Messages_Selected>
+      <Orientation x='0' y='0' z='0' />
+      <RowHeight>25</RowHeight>
+      <BorderHeightAdjust>0</BorderHeightAdjust>
+      <BorderWidthAdjust>0</BorderWidthAdjust>
+      <GapBetweenItems>0</GapBetweenItems>
+      <Decorative>false</Decorative>
+      <Sort></Sort>
+      <Index></Index>
+      <Enable></Enable>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+      <Columns href='WXFEP.SelectLanguageList-27'/>
+      <Columns href='WXFEP.SelectLanguageList-1'/>
+    </WXFE_ListBoxRows>
+    <WXFE_StringTableColumns id='WXFEP.SelectLanguageList-27'>
+      <CallBack>false</CallBack>
+      <Text>FETXT.Chinese</Text>
+      <Font>FE.Font</Font>
+      <FontSize>20</FontSize>
+      <Width>100</Width>
+      <WidthIsInPercent>true</WidthIsInPercent>
+      <ScaleTextToFit>true</ScaleTextToFit>
+      <KeepWhiteSpace>false</KeepWhiteSpace>
+      <Justification>4</Justification>
+      <ColourFRONT_Normal>26</ColourFRONT_Normal>
+      <ColourFRONT_Highlight>2</ColourFRONT_Highlight>
+      <ColourFRONT_Disabled>19</ColourFRONT_Disabled>
+      <ColourBACK_Normal>3</ColourBACK_Normal>
+      <ColourBACK_Highlight>2</ColourBACK_Highlight>
+      <ColourBACK_Disabled>2</ColourBACK_Disabled>
+      <TextAnim>0</TextAnim>
+      <TextAnimSeed>0</TextAnimSeed>
+      <KeepJustification>false</KeepJustification>
+    </WXFE_StringTableColumns>
+  </xomObjects>
+</xomArchive>
