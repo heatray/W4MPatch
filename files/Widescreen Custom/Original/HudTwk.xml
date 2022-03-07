@@ -1,0 +1,940 @@
+<?xml version='1.0' ?>
+<xomArchive>
+  <xomObjects>
+    <XDataBank id='id-0'>
+      <Section>0</Section>
+      <IntResources href='HUD.AngleMeter.Invert'/>
+      <IntResources href='HUD.AngleMeter.SlideTime'/>
+      <UintResources href='Chat.Open'/>
+      <UintResources href='FE.BriefingPanel.DarkenScreen'/>
+      <UintResources href='FE.BriefingPanel.DisplayTime'/>
+      <UintResources href='FE.BriefingPanel.ShowButton'/>
+      <UintResources href='HST.FadeDelay'/>
+      <UintResources href='HUD.Clock.DisplayRoundTime'/>
+      <UintResources href='HUD.Clock.DisplayTenths'/>
+      <UintResources href='HUD.Counter.Active'/>
+      <UintResources href='HUD.Counter.Percent'/>
+      <UintResources href='HUD.Counter.Team00'/>
+      <UintResources href='HUD.Counter.Team01'/>
+      <UintResources href='HUD.Counter.Team02'/>
+      <UintResources href='HUD.Counter.Team03'/>
+      <UintResources href='HUD.Counter.Value'/>
+      <UintResources href='HUD.Energy.InActiveTimer'/>
+      <UintResources href='HUD.Energy.Visible.Team00'/>
+      <UintResources href='HUD.Energy.Visible.Team01'/>
+      <UintResources href='HUD.Energy.Visible.Team02'/>
+      <UintResources href='HUD.Energy.Visible.Team03'/>
+      <UintResources href='HUD.Powerbar.FadeTime'/>
+      <UintResources href='HUD.Powerbar.MaxAlpha'/>
+      <UintResources href='HUD.Powerbar.NormAlpha'/>
+      <UintResources href='HUD.Scanner.FlashRate'/>
+      <UintResources href='Network.Indicator.FrameRate'/>
+      <UintResources href='TwkEdVer.HUDTWK'/>
+      <StringResources href='FE.BriefingPanel.ButtonMessage'/>
+      <StringResources href='FE.BriefingPanel.ButtonText'/>
+      <StringResources href='FE.BriefingPanel.Text'/>
+      <StringResources href='HST.IntroAnimName'/>
+      <StringResources href='HST.OutroAnimName'/>
+      <StringResources href='HST.TextAnimNames'/>
+      <StringResources href='HUD.Comment.AnimNames'/>
+      <StringResources href='HUD.Counter.Intro'/>
+      <StringResources href='HUD.Counter.Outro'/>
+      <StringResources href='HUD.HealthName.AnimNames'/>
+      <StringResources href='HUD.MeleeBar.Intro'/>
+      <StringResources href='HUD.MeleeBar.Outro'/>
+      <FloatResources href='Chat.Indicator.AudioVol'/>
+      <FloatResources href='Chat.Indicator.Duration'/>
+      <FloatResources href='Chat.Indicator.ScrollSpeed'/>
+      <FloatResources href='FE.BriefingPanel.Height'/>
+      <FloatResources href='FE.BriefingPanel.TextSize'/>
+      <FloatResources href='FE.BriefingPanel.Width'/>
+      <FloatResources href='FE.BriefingPanel.XPos'/>
+      <FloatResources href='FE.BriefingPanel.YPos'/>
+      <FloatResources href='HST.FlagScale'/>
+      <FloatResources href='HST.ReadyTextScale'/>
+      <FloatResources href='HST.TeamNameMaxScale'/>
+      <FloatResources href='HST.TeamNameMaxWidth'/>
+      <FloatResources href='HST.TimeTextScale'/>
+      <FloatResources href='HST.WormNameMaxScale'/>
+      <FloatResources href='HST.WormNameMaxWidth'/>
+      <FloatResources href='HST.WormNumberScale'/>
+      <FloatResources href='HUD.3DText.BackEndWidth'/>
+      <FloatResources href='HUD.3DText.CountdownSpeed'/>
+      <FloatResources href='HUD.3DText.MaxScalingDist'/>
+      <FloatResources href='HUD.3DText.MinScalingDist'/>
+      <FloatResources href='HUD.3DText.Scale'/>
+      <FloatResources href='HUD.AngleMeter.OffScreenX'/>
+      <FloatResources href='HUD.AngleMeter.OnScreenX'/>
+      <FloatResources href='HUD.AngleMeter.RotXOffset'/>
+      <FloatResources href='HUD.AngleMeter.ScaleArrowX'/>
+      <FloatResources href='HUD.AngleMeter.ScreenY'/>
+      <FloatResources href='HUD.Comment.Fontsize'/>
+      <FloatResources href='HUD.Comment.PixelWidth'/>
+      <FloatResources href='HUD.Counter.BackScale'/>
+      <FloatResources href='HUD.Counter.TextScale'/>
+      <FloatResources href='HUD.Energy.BarHeight'/>
+      <FloatResources href='HUD.Energy.BarSpacing'/>
+      <FloatResources href='HUD.Energy.BarXOffset'/>
+      <FloatResources href='HUD.Energy.DecreaseRate'/>
+      <FloatResources href='HUD.Energy.FlagBackXScale'/>
+      <FloatResources href='HUD.Energy.FlagBackYScale'/>
+      <FloatResources href='HUD.Energy.FlagXScale'/>
+      <FloatResources href='HUD.Energy.FlagYScale'/>
+      <FloatResources href='HUD.Energy.MaxLength'/>
+      <FloatResources href='HUD.Energy.ScrollSpeed'/>
+      <FloatResources href='HUD.Energy.TextScale'/>
+      <FloatResources href='HUD.Energy.TextXOffset'/>
+      <FloatResources href='HUD.HPreview.BarScale'/>
+      <FloatResources href='HUD.HPreview.IconScale'/>
+      <FloatResources href='HUD.HPreview.TextScale'/>
+      <FloatResources href='HUD.HealthName.HealthOffset'/>
+      <FloatResources href='HUD.HealthName.NameOffset'/>
+      <FloatResources href='HUD.MeleeBar.BlendSpeed'/>
+      <FloatResources href='HUD.MeleeBar.MaxSwingAngle'/>
+      <FloatResources href='HUD.MeleeBar.Radius'/>
+      <FloatResources href='HUD.Scanner.DistScale'/>
+      <FloatResources href='HUD.Scanner.Radius'/>
+      <FloatResources href='HUD.Scanner.ScrollSpeed'/>
+      <FloatResources href='HUD.Wind.BackScale'/>
+      <FloatResources href='HUD.Wind.Scale'/>
+      <FloatResources href='HUD.Wind.ScrollSpeed'/>
+      <FloatResources href='HUD.Wind.SpeedScale'/>
+      <FloatResources href='Network.Indicator.Duration'/>
+      <VectorResources href='Angle.Power.DaveThang.Scale'/>
+      <VectorResources href='Chat.Indicator.AudioPos'/>
+      <VectorResources href='Chat.Indicator.OffScreenPos'/>
+      <VectorResources href='Chat.Indicator.OnScreenPos'/>
+      <VectorResources href='Chat.Indicator.Scale'/>
+      <VectorResources href='HUD.3DText.TextToBackRatio'/>
+      <VectorResources href='HUD.ActWormInfo.BackScale'/>
+      <VectorResources href='HUD.ActWormInfo.Pos'/>
+      <VectorResources href='HUD.ActWormInfo.WeapOffset'/>
+      <VectorResources href='HUD.ActWormInfo.WeapScale'/>
+      <VectorResources href='HUD.AngleMeter.ArrowOffset'/>
+      <VectorResources href='HUD.Armour.Position'/>
+      <VectorResources href='HUD.Clock.Orientation'/>
+      <VectorResources href='HUD.Clock.Position'/>
+      <VectorResources href='HUD.Clock.Scale'/>
+      <VectorResources href='HUD.Comment.Position'/>
+      <VectorResources href='HUD.Counter.Position'/>
+      <VectorResources href='HUD.Energy.OffScreen'/>
+      <VectorResources href='HUD.Energy.OnScreen'/>
+      <VectorResources href='HUD.HPreview.IconPosition'/>
+      <VectorResources href='HUD.HPreview.Position'/>
+      <VectorResources href='HUD.HPreview.TextPosition'/>
+      <VectorResources href='HUD.MeleeBar.Position'/>
+      <VectorResources href='HUD.Powerbar.BackScale'/>
+      <VectorResources href='HUD.Powerbar.Position'/>
+      <VectorResources href='HUD.Powerbar.Scale'/>
+      <VectorResources href='HUD.Scanner.CrateScale'/>
+      <VectorResources href='HUD.Scanner.DotScale'/>
+      <VectorResources href='HUD.Scanner.MarksScale'/>
+      <VectorResources href='HUD.Scanner.OffscreenPos'/>
+      <VectorResources href='HUD.Scanner.Position'/>
+      <VectorResources href='HUD.Scanner.Scale'/>
+      <VectorResources href='HUD.Wind.ArrowOffset'/>
+      <VectorResources href='HUD.Wind.ArrowOrien'/>
+      <VectorResources href='HUD.Wind.OffScreenPos'/>
+      <VectorResources href='HUD.Wind.OnScreenPos'/>
+      <VectorResources href='HUD.Wind.TextOffset'/>
+      <VectorResources href='Network.Indicator.OffScreenPos'/>
+      <VectorResources href='Network.Indicator.OnScreenPos'/>
+      <VectorResources href='Network.Indicator.Scale'/>
+      <ContainerResources href='Chat.Messages'/>
+      <ColorResources href='Chat.Colour.Alliance'/>
+      <ColorResources href='Chat.Colour.Global'/>
+      <ColorResources href='Chat.Colour.GlobalAnon'/>
+      <ColorResources href='Chat.Colour.PlayerIn'/>
+      <ColorResources href='Chat.Colour.PlayerOut'/>
+      <ColorResources href='FE.BriefingPanel.TextColour'/>
+      <ColorResources href='HST.FaderColor'/>
+      <ColorResources href='HST.ReadyTextColor'/>
+      <ColorResources href='HST.ShadowColor'/>
+      <ColorResources href='HST.TeamNameColor'/>
+      <ColorResources href='HST.TimeTextColor'/>
+      <ColorResources href='HUD.Clock.ColourGameTime'/>
+      <ColorResources href='HUD.Clock.ColourTurnEnd'/>
+      <ColorResources href='HUD.Comment.ShadowColor'/>
+      <ColorResources href='HUD.Comment.TextColor'/>
+      <ColorResources href='HUD.Counter.ShadowColor'/>
+      <ColorResources href='HUD.Counter.TextColor'/>
+    </XDataBank>
+    <XIntResourceDetails id='HUD.AngleMeter.Invert'>
+      <Value>0</Value>
+      <Name>HUD.AngleMeter.Invert</Name>
+      <Flags>64</Flags>
+    </XIntResourceDetails>
+    <XIntResourceDetails id='HUD.AngleMeter.SlideTime'>
+      <Value>300</Value>
+      <Name>HUD.AngleMeter.SlideTime</Name>
+      <Flags>64</Flags>
+    </XIntResourceDetails>
+    <XUintResourceDetails id='Chat.Open'>
+      <Value>0</Value>
+      <Name>Chat.Open</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='FE.BriefingPanel.DarkenScreen'>
+      <Value>0</Value>
+      <Name>FE.BriefingPanel.DarkenScreen</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='FE.BriefingPanel.DisplayTime'>
+      <Value>5000</Value>
+      <Name>FE.BriefingPanel.DisplayTime</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='FE.BriefingPanel.ShowButton'>
+      <Value>0</Value>
+      <Name>FE.BriefingPanel.ShowButton</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HST.FadeDelay'>
+      <Value>400</Value>
+      <Name>HST.FadeDelay</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Clock.DisplayRoundTime'>
+      <Value>1</Value>
+      <Name>HUD.Clock.DisplayRoundTime</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Clock.DisplayTenths'>
+      <Value>0</Value>
+      <Name>HUD.Clock.DisplayTenths</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Active'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Active</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Percent'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Percent</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Team00'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Team00</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Team01'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Team01</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Team02'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Team02</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Team03'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Team03</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Counter.Value'>
+      <Value>0</Value>
+      <Name>HUD.Counter.Value</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Energy.InActiveTimer'>
+      <Value>5000</Value>
+      <Name>HUD.Energy.InActiveTimer</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Energy.Visible.Team00'>
+      <Value>1</Value>
+      <Name>HUD.Energy.Visible.Team00</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Energy.Visible.Team01'>
+      <Value>1</Value>
+      <Name>HUD.Energy.Visible.Team01</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Energy.Visible.Team02'>
+      <Value>1</Value>
+      <Name>HUD.Energy.Visible.Team02</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Energy.Visible.Team03'>
+      <Value>1</Value>
+      <Name>HUD.Energy.Visible.Team03</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Powerbar.FadeTime'>
+      <Value>500</Value>
+      <Name>HUD.Powerbar.FadeTime</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Powerbar.MaxAlpha'>
+      <Value>255</Value>
+      <Name>HUD.Powerbar.MaxAlpha</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Powerbar.NormAlpha'>
+      <Value>255</Value>
+      <Name>HUD.Powerbar.NormAlpha</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='HUD.Scanner.FlashRate'>
+      <Value>330</Value>
+      <Name>HUD.Scanner.FlashRate</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='Network.Indicator.FrameRate'>
+      <Value>4</Value>
+      <Name>Network.Indicator.FrameRate</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XUintResourceDetails id='TwkEdVer.HUDTWK'>
+      <Value>175</Value>
+      <Name>TwkEdVer.HUDTWK</Name>
+      <Flags>64</Flags>
+    </XUintResourceDetails>
+    <XStringResourceDetails id='FE.BriefingPanel.ButtonMessage'>
+      <Value></Value>
+      <Name>FE.BriefingPanel.ButtonMessage</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='FE.BriefingPanel.ButtonText'>
+      <Value></Value>
+      <Name>FE.BriefingPanel.ButtonText</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='FE.BriefingPanel.Text'>
+      <Value></Value>
+      <Name>FE.BriefingPanel.Text</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HST.IntroAnimName'>
+      <Value>HST_In_All</Value>
+      <Name>HST.IntroAnimName</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HST.OutroAnimName'>
+      <Value>HST_Out_All</Value>
+      <Name>HST.OutroAnimName</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HST.TextAnimNames'>
+      <Value>High5;Low5</Value>
+      <Name>HST.TextAnimNames</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.Comment.AnimNames'>
+      <Value>High1;Low1</Value>
+      <Name>HUD.Comment.AnimNames</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.Counter.Intro'>
+      <Value>In_Timer</Value>
+      <Name>HUD.Counter.Intro</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.Counter.Outro'>
+      <Value>Out_Timer</Value>
+      <Name>HUD.Counter.Outro</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.HealthName.AnimNames'>
+      <Value>High2;Low2</Value>
+      <Name>HUD.HealthName.AnimNames</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.MeleeBar.Intro'>
+      <Value>In_TeamInfo</Value>
+      <Name>HUD.MeleeBar.Intro</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XStringResourceDetails id='HUD.MeleeBar.Outro'>
+      <Value>Out_TeamInfo</Value>
+      <Name>HUD.MeleeBar.Outro</Name>
+      <Flags>64</Flags>
+    </XStringResourceDetails>
+    <XFloatResourceDetails id='Chat.Indicator.AudioVol'>
+      <Value>1</Value>
+      <Name>Chat.Indicator.AudioVol</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='Chat.Indicator.Duration'>
+      <Value>5000</Value>
+      <Name>Chat.Indicator.Duration</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='Chat.Indicator.ScrollSpeed'>
+      <Value>0.2</Value>
+      <Name>Chat.Indicator.ScrollSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='FE.BriefingPanel.Height'>
+      <Value>100</Value>
+      <Name>FE.BriefingPanel.Height</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='FE.BriefingPanel.TextSize'>
+      <Value>16</Value>
+      <Name>FE.BriefingPanel.TextSize</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='FE.BriefingPanel.Width'>
+      <Value>125</Value>
+      <Name>FE.BriefingPanel.Width</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='FE.BriefingPanel.XPos'>
+      <Value>-150</Value>
+      <Name>FE.BriefingPanel.XPos</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='FE.BriefingPanel.YPos'>
+      <Value>0</Value>
+      <Name>FE.BriefingPanel.YPos</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.FlagScale'>
+      <Value>5</Value>
+      <Name>HST.FlagScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.ReadyTextScale'>
+      <Value>26</Value>
+      <Name>HST.ReadyTextScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.TeamNameMaxScale'>
+      <Value>35</Value>
+      <Name>HST.TeamNameMaxScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.TeamNameMaxWidth'>
+      <Value>300</Value>
+      <Name>HST.TeamNameMaxWidth</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.TimeTextScale'>
+      <Value>48</Value>
+      <Name>HST.TimeTextScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.WormNameMaxScale'>
+      <Value>41</Value>
+      <Name>HST.WormNameMaxScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.WormNameMaxWidth'>
+      <Value>245</Value>
+      <Name>HST.WormNameMaxWidth</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HST.WormNumberScale'>
+      <Value>7</Value>
+      <Name>HST.WormNumberScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.3DText.BackEndWidth'>
+      <Value>0.2</Value>
+      <Name>HUD.3DText.BackEndWidth</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.3DText.CountdownSpeed'>
+      <Value>0.05</Value>
+      <Name>HUD.3DText.CountdownSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.3DText.MaxScalingDist'>
+      <Value>200</Value>
+      <Name>HUD.3DText.MaxScalingDist</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.3DText.MinScalingDist'>
+      <Value>80</Value>
+      <Name>HUD.3DText.MinScalingDist</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.3DText.Scale'>
+      <Value>5</Value>
+      <Name>HUD.3DText.Scale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.AngleMeter.OffScreenX'>
+      <Value>-215</Value>
+      <Name>HUD.AngleMeter.OffScreenX</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.AngleMeter.OnScreenX'>
+      <Value>-215</Value>
+      <Name>HUD.AngleMeter.OnScreenX</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.AngleMeter.RotXOffset'>
+      <Value>42</Value>
+      <Name>HUD.AngleMeter.RotXOffset</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.AngleMeter.ScaleArrowX'>
+      <Value>33</Value>
+      <Name>HUD.AngleMeter.ScaleArrowX</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.AngleMeter.ScreenY'>
+      <Value>-165</Value>
+      <Name>HUD.AngleMeter.ScreenY</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Comment.Fontsize'>
+      <Value>30</Value>
+      <Name>HUD.Comment.Fontsize</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Comment.PixelWidth'>
+      <Value>256</Value>
+      <Name>HUD.Comment.PixelWidth</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Counter.BackScale'>
+      <Value>30</Value>
+      <Name>HUD.Counter.BackScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Counter.TextScale'>
+      <Value>24</Value>
+      <Name>HUD.Counter.TextScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.BarHeight'>
+      <Value>24</Value>
+      <Name>HUD.Energy.BarHeight</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.BarSpacing'>
+      <Value>27</Value>
+      <Name>HUD.Energy.BarSpacing</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.BarXOffset'>
+      <Value>22</Value>
+      <Name>HUD.Energy.BarXOffset</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.DecreaseRate'>
+      <Value>1.5</Value>
+      <Name>HUD.Energy.DecreaseRate</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.FlagBackXScale'>
+      <Value>10</Value>
+      <Name>HUD.Energy.FlagBackXScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.FlagBackYScale'>
+      <Value>10</Value>
+      <Name>HUD.Energy.FlagBackYScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.FlagXScale'>
+      <Value>2.2</Value>
+      <Name>HUD.Energy.FlagXScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.FlagYScale'>
+      <Value>2.2</Value>
+      <Name>HUD.Energy.FlagYScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.MaxLength'>
+      <Value>122</Value>
+      <Name>HUD.Energy.MaxLength</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.ScrollSpeed'>
+      <Value>0.2</Value>
+      <Name>HUD.Energy.ScrollSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.TextScale'>
+      <Value>20</Value>
+      <Name>HUD.Energy.TextScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Energy.TextXOffset'>
+      <Value>-32</Value>
+      <Name>HUD.Energy.TextXOffset</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.HPreview.BarScale'>
+      <Value>11</Value>
+      <Name>HUD.HPreview.BarScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.HPreview.IconScale'>
+      <Value>18</Value>
+      <Name>HUD.HPreview.IconScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.HPreview.TextScale'>
+      <Value>16</Value>
+      <Name>HUD.HPreview.TextScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.HealthName.HealthOffset'>
+      <Value>4</Value>
+      <Name>HUD.HealthName.HealthOffset</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.HealthName.NameOffset'>
+      <Value>9</Value>
+      <Name>HUD.HealthName.NameOffset</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.MeleeBar.BlendSpeed'>
+      <Value>1</Value>
+      <Name>HUD.MeleeBar.BlendSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.MeleeBar.MaxSwingAngle'>
+      <Value>0.48</Value>
+      <Name>HUD.MeleeBar.MaxSwingAngle</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.MeleeBar.Radius'>
+      <Value>250</Value>
+      <Name>HUD.MeleeBar.Radius</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Scanner.DistScale'>
+      <Value>0.05</Value>
+      <Name>HUD.Scanner.DistScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Scanner.Radius'>
+      <Value>32</Value>
+      <Name>HUD.Scanner.Radius</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Scanner.ScrollSpeed'>
+      <Value>0.2</Value>
+      <Name>HUD.Scanner.ScrollSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Wind.BackScale'>
+      <Value>32</Value>
+      <Name>HUD.Wind.BackScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Wind.Scale'>
+      <Value>1</Value>
+      <Name>HUD.Wind.Scale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Wind.ScrollSpeed'>
+      <Value>0.1</Value>
+      <Name>HUD.Wind.ScrollSpeed</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='HUD.Wind.SpeedScale'>
+      <Value>15</Value>
+      <Name>HUD.Wind.SpeedScale</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XFloatResourceDetails id='Network.Indicator.Duration'>
+      <Value>5000</Value>
+      <Name>Network.Indicator.Duration</Name>
+      <Flags>64</Flags>
+    </XFloatResourceDetails>
+    <XVectorResourceDetails id='Angle.Power.DaveThang.Scale'>
+      <Value x='64' y='64' z='1' />
+      <Name>Angle.Power.DaveThang.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Chat.Indicator.AudioPos'>
+      <Value x='0' y='0' z='0' />
+      <Name>Chat.Indicator.AudioPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Chat.Indicator.OffScreenPos'>
+      <Value x='0' y='300' z='0' />
+      <Name>Chat.Indicator.OffScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Chat.Indicator.OnScreenPos'>
+      <Value x='0' y='167' z='0' />
+      <Name>Chat.Indicator.OnScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Chat.Indicator.Scale'>
+      <Value x='25' y='25' z='0' />
+      <Name>Chat.Indicator.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.3DText.TextToBackRatio'>
+      <Value x='1' y='0.9' z='0' />
+      <Name>HUD.3DText.TextToBackRatio</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.ActWormInfo.BackScale'>
+      <Value x='56' y='56' z='0' />
+      <Name>HUD.ActWormInfo.BackScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.ActWormInfo.Pos'>
+      <Value x='253' y='174' z='0' />
+      <Name>HUD.ActWormInfo.Pos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.ActWormInfo.WeapOffset'>
+      <Value x='0' y='0' z='0' />
+      <Name>HUD.ActWormInfo.WeapOffset</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.ActWormInfo.WeapScale'>
+      <Value x='56' y='56' z='0' />
+      <Name>HUD.ActWormInfo.WeapScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.AngleMeter.ArrowOffset'>
+      <Value x='-9' y='0' z='0' />
+      <Name>HUD.AngleMeter.ArrowOffset</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Armour.Position'>
+      <Value x='206' y='0' z='0' />
+      <Name>HUD.Armour.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Clock.Orientation'>
+      <Value x='0' y='0' z='-0.1' />
+      <Name>HUD.Clock.Orientation</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Clock.Position'>
+      <Value x='254' y='-170' z='0' />
+      <Name>HUD.Clock.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Clock.Scale'>
+      <Value x='56' y='56' z='1' />
+      <Name>HUD.Clock.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Comment.Position'>
+      <Value x='0' y='140' z='0' />
+      <Name>HUD.Comment.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Counter.Position'>
+      <Value x='200' y='-200' z='0' />
+      <Name>HUD.Counter.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Energy.OffScreen'>
+      <Value x='10' y='-320' z='0' />
+      <Name>HUD.Energy.OffScreen</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Energy.OnScreen'>
+      <Value x='10' y='-120' z='0' />
+      <Name>HUD.Energy.OnScreen</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.HPreview.IconPosition'>
+      <Value x='25' y='20' z='0' />
+      <Name>HUD.HPreview.IconPosition</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.HPreview.Position'>
+      <Value x='252' y='88' z='0' />
+      <Name>HUD.HPreview.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.HPreview.TextPosition'>
+      <Value x='10' y='20' z='0' />
+      <Name>HUD.HPreview.TextPosition</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.MeleeBar.Position'>
+      <Value x='0' y='-180' z='0' />
+      <Name>HUD.MeleeBar.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Powerbar.BackScale'>
+      <Value x='64' y='64' z='1' />
+      <Name>HUD.Powerbar.BackScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Powerbar.Position'>
+      <Value x='-269' y='-165' z='0' />
+      <Name>HUD.Powerbar.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Powerbar.Scale'>
+      <Value x='1' y='1' z='1' />
+      <Name>HUD.Powerbar.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.CrateScale'>
+      <Value x='4.5' y='4.5' z='4.5' />
+      <Name>HUD.Scanner.CrateScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.DotScale'>
+      <Value x='5' y='5' z='5' />
+      <Name>HUD.Scanner.DotScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.MarksScale'>
+      <Value x='7' y='7' z='7' />
+      <Name>HUD.Scanner.MarksScale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.OffscreenPos'>
+      <Value x='-400' y='155' z='0' />
+      <Name>HUD.Scanner.OffscreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.Position'>
+      <Value x='-241' y='167' z='0' />
+      <Name>HUD.Scanner.Position</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Scanner.Scale'>
+      <Value x='64' y='64' z='1' />
+      <Name>HUD.Scanner.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Wind.ArrowOffset'>
+      <Value x='24' y='-8' z='45' />
+      <Name>HUD.Wind.ArrowOffset</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Wind.ArrowOrien'>
+      <Value x='0.75' y='0' z='-0.2' />
+      <Name>HUD.Wind.ArrowOrien</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Wind.OffScreenPos'>
+      <Value x='-400' y='90' z='0' />
+      <Name>HUD.Wind.OffScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Wind.OnScreenPos'>
+      <Value x='-268' y='90' z='1' />
+      <Name>HUD.Wind.OnScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='HUD.Wind.TextOffset'>
+      <Value x='33' y='-2' z='0' />
+      <Name>HUD.Wind.TextOffset</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Network.Indicator.OffScreenPos'>
+      <Value x='0' y='300' z='0' />
+      <Name>Network.Indicator.OffScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Network.Indicator.OnScreenPos'>
+      <Value x='254' y='180' z='0' />
+      <Name>Network.Indicator.OnScreenPos</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XVectorResourceDetails id='Network.Indicator.Scale'>
+      <Value x='26.5' y='26.5' z='0' />
+      <Name>Network.Indicator.Scale</Name>
+      <Flags>64</Flags>
+    </XVectorResourceDetails>
+    <XContainerResourceDetails id='Chat.Messages'>
+      <Value href='Chat.Messages-0'/>
+      <Name>Chat.Messages</Name>
+      <Flags>81</Flags>
+    </XContainerResourceDetails>
+    <ChatMessagesContainer id='Chat.Messages-0'>
+    </ChatMessagesContainer>
+    <XColorResourceDetails id='Chat.Colour.Alliance'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>Chat.Colour.Alliance</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='Chat.Colour.Global'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>Chat.Colour.Global</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='Chat.Colour.GlobalAnon'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>Chat.Colour.GlobalAnon</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='Chat.Colour.PlayerIn'>
+      <Value r='64' g='255' b='255' a='255' />
+      <Name>Chat.Colour.PlayerIn</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='Chat.Colour.PlayerOut'>
+      <Value r='0' g='128' b='128' a='255' />
+      <Name>Chat.Colour.PlayerOut</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='FE.BriefingPanel.TextColour'>
+      <Value r='255' g='245' b='200' a='255' />
+      <Name>FE.BriefingPanel.TextColour</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HST.FaderColor'>
+      <Value r='33' g='44' b='57' a='0' />
+      <Name>HST.FaderColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HST.ReadyTextColor'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>HST.ReadyTextColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HST.ShadowColor'>
+      <Value r='0' g='0' b='0' a='255' />
+      <Name>HST.ShadowColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HST.TeamNameColor'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>HST.TeamNameColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HST.TimeTextColor'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>HST.TimeTextColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Clock.ColourGameTime'>
+      <Value r='190' g='215' b='255' a='255' />
+      <Name>HUD.Clock.ColourGameTime</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Clock.ColourTurnEnd'>
+      <Value r='255' g='55' b='55' a='255' />
+      <Name>HUD.Clock.ColourTurnEnd</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Comment.ShadowColor'>
+      <Value r='0' g='0' b='0' a='255' />
+      <Name>HUD.Comment.ShadowColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Comment.TextColor'>
+      <Value r='255' g='255' b='255' a='255' />
+      <Name>HUD.Comment.TextColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Counter.ShadowColor'>
+      <Value r='0' g='0' b='0' a='255' />
+      <Name>HUD.Counter.ShadowColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+    <XColorResourceDetails id='HUD.Counter.TextColor'>
+      <Value r='255' g='178' b='0' a='255' />
+      <Name>HUD.Counter.TextColor</Name>
+      <Flags>64</Flags>
+    </XColorResourceDetails>
+  </xomObjects>
+</xomArchive>
