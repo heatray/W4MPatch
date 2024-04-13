@@ -1,0 +1,28 @@
+================================== W4M.Loader ==================================
+
+Place modified XOM or TGA files here from the following paths and they will be
+loaded by the game instead of original ones:
+
+- Data
+- Data/Themes
+- Data/Effects
+- Data/Effects/ParticleData
+- Data/Frontend/Levels
+- Data/Tweak
+- Data/databanks
+- Data/Audio
+- Data/Language/PC
+- Data/scripts
+- Data/Logos
+- Data/Maps
+- Data/HUD/Flags
+- Data/HUD/Weapons
+- Data/Objects
+- Data/Temp
+- Data/HUD
+- Data/Character
+- Data/Misc Objects
+- Data/Weapons
+- Data/Weapons/Custom
+- Data/Frontend/Mechanics
+- Data/Frontend/Icons
