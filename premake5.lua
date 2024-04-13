@@ -1,41 +1,47 @@
-workspace "W4MPatch"
+workspace "W4MAnniversaryPatch"
    configurations { "Release", "Debug" }
    platforms { "Win32" }
    architecture "x32"
    location "build"
+   -- objdir ("build/obj")
+   -- buildlog ("build/log/%{prj.name}.log")
    buildoptions {"-std:c++latest"}
 
-project "W4MPatch"
    kind "SharedLib"
    language "C++"
+   targetextension ".asi"
    characterset ("UNICODE")
    staticruntime "On"
 
-   defines {
-      "rsc_MajorVersion=0",
-      "rsc_MinorVersion=3",
-      "rsc_RevisionID=0",
-      "rsc_BuildID=1",
-      "rsc_StringVersion=\"0.3.0.1\"",
-      "rsc_CompanyName=\"heatray\"",
-      "rsc_FileDescription=\"Patch for Worms 4 Mayhem\"",
-      "rsc_InternalName=\"%{prj.name}\"",
-      "rsc_LegalCopyright=\"Copyright (C) heatray\"",
-      "rsc_OriginalFilename=\"%{prj.name}.dll\"",
-      "rsc_ProductName=\"Anniversary Patch\"",
-      "rsc_UpdateUrl=\"https://github.com/heatray/W4MPatch/releases\""
-   }
-
-   files { "source/dllmain.cpp" }
    files { "source/stdafx.h", "source/stdafx.cpp" }
-   -- files { "source/hooking/Hooking.Patterns.h", "source/hooking/Hooking.Patterns.cpp" }
    files { "source/resources/VersionInfo.rc" }
 
    includedirs { "source" }
-   -- includedirs { "source/hooking" }
-   includedirs { "source/injector/include" }
+   includedirs { "source/injector" }
    includedirs { "source/inireader" }
 
+   date = os.outputof("date /t")
+   yy = tonumber(string.sub(date, 9, 10))
+   mm = tonumber(string.sub(date, 4, 5))
+   dd = 0 -- tonumber(string.sub(date, 1, 2))
+   build = 0
+
+   defines {
+      "rsc_MajorVersion=%{yy}",
+      "rsc_MinorVersion=%{mm}",
+      "rsc_RevisionID=%{dd}",
+      "rsc_BuildID=%{build}"
+   }
+   defines {
+      "rsc_StringVersion=\"%{yy}.%{mm}.%{dd}.%{build}\"",
+      "rsc_InternalName=\"%{prj.name}\"",
+      "rsc_ProductName=\"Anniversary Patch\"",
+      "rsc_OriginalFilename=\"%{prj.name}.dll\"",
+      "rsc_CompanyName=\"heatray\"",
+      "rsc_LegalCopyright=\"Copyright (C) heatray\"",
+      "rsc_UpdateUrl=\"https://github.com/heatray/W4MPatch/releases\""
+   }
+   
    filter "configurations:Debug*"
       defines "DEBUG"
       symbols "On"
@@ -43,3 +49,13 @@ project "W4MPatch"
    filter "configurations:Release*"
       defines "NDEBUG"
       optimize "On"
+
+project "W4M.Patch"
+   files { "source/patch.cpp" }
+
+   defines { "rsc_FileDescription=\"Patch for Worms 4 Mayhem\"" }
+
+project "W4M.Loader"
+   files { "source/loader.cpp" }
+
+   defines { "rsc_FileDescription=\"Loader for Worms 4 Mayhem\"" }
