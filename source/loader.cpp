@@ -3,30 +3,20 @@
 const char* DataPath = "Data2";
 
 DWORD XString__XString = 0x402285;
-DWORD XString__FreeRep = 0x402280;
-DWORD XomApp__GetInstance = 0x413444;
+DWORD XomHelp__XomAppBase__GetInstance = 0x413444;
 
 void __declspec(naked) InitOptionalPathsCodeCave()
 {
     __asm {
-        jne     FreeRepIcons
-        call    XString__FreeRep
-    FreeRepIcons:
         push    DataPath
-        lea     ecx, dword ptr ss:[esp+0x4]
+        lea     ecx, dword ptr ss : [esp + 0x4]
         call    XString__XString
-        call    XomApp__GetInstance
-        mov     ecx, dword ptr ds:[eax]
-        lea     edx, dword ptr ss:[esp]
+        call    XomHelp__XomAppBase__GetInstance
+        mov     ecx, dword ptr ds : [eax]
+        lea     edx, dword ptr ss : [esp]
         push    edx
         push    eax
-        call    dword ptr ds:[ecx+0xC]
-        add     ecx, 0xFFFFFFFA
-        dec     word ptr ds:[ecx]
-        cmp     word ptr ds:[ecx], 0
-        jne     FreeRepData2
-        call    XString__FreeRep
-    FreeRepData2:
+        call    dword ptr ds : [ecx + 0xC]
         pop     ecx
         retn
     }
@@ -35,7 +25,7 @@ void __declspec(naked) InitOptionalPathsCodeCave()
 void Init()
 {
     // WormsXApp::InitOptionalPaths
-    injector::MakeJMP(0x4AB345, InitOptionalPathsCodeCave);
+    injector::MakeJMP(0x4AB34C, InitOptionalPathsCodeCave);
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved)
@@ -44,8 +34,12 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved)
     {
         if (strcmp((char*)0x7766A8, "Worms 4: Mayhem!") == 0)
         {
-            Init();
+            if (strcmp((char*)0x776908, "MenuTwkXPCEuro") == 0)
+            {
+                Init();
+            }
         }
     }
+
     return TRUE;
 }

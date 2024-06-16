@@ -1,7 +1,7 @@
 ================================== W4M.Loader ==================================
 
-Place modified XOM or TGA files here from the following paths and they will be
-loaded by the game instead of original ones:
+Place modified XML, XOM or TGA files here from the following paths and they will
+be loaded by the game instead of original ones:
 
 - Data
 - Data/Themes
