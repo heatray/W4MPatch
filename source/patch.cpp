@@ -14,6 +14,16 @@ struct Frustum
     float Bottom = -0.48f;
     float Top = 0.48f;
 } Frustum;
+struct MovieRect
+{
+    int vX = 0;
+    int vY = 0;
+    int vW = 640;
+    int vH = 480;
+    float AspectRatioX = 4.0f / 3.0f;
+    float AspectRatioY = 3.0f / 4.0f;
+    float fTwo = 2.0f;
+} MovieRect;
 bool AspectRatioFix, LandmineLodFix, EnableAllLanguages;
 uint8_t FrameInterval;
 
@@ -44,6 +54,7 @@ DWORD AspectRatioCodeCaveExit = 0x4AB897;
 DWORD FrustumCodeCaveExit = 0x4ABCE3;
 float* XCamera__Aperture = (float*)0x7EED38;
 DWORD SetFromSceneCameraCodeCaveExit = 0x43458F;
+DWORD MoviePlayerPCCodeCaveExit = 0x6B7023;
 
 void __declspec(naked) AspectRatioCodeCave()
 {
@@ -124,6 +135,65 @@ void __declspec(naked) SetFromSceneCameraCodeCave()
     }
 }
 
+void __declspec(naked) MoviePlayerPCCodeCave()
+{
+    __asm {
+        fild    dword ptr ss : [esp + 0x24] // Bottom
+        fidiv   dword ptr ss : [esp + 0x20] // Right
+        fld     dword ptr ds : [MovieRect.AspectRatioY]
+        fcomip  st(0), st(1)
+        fstp    st(0)
+        jne     AspectRatioX
+        jmp     MoviePlayerEnd
+
+    AspectRatioX :
+        // vW = B * (4 / 3)
+        // vH = B
+        // vX = (R - vW) / 2
+        // vY = 0
+        jb      AspectRatioY
+        fild    dword ptr ss : [esp + 0x20] // Width
+        fild    dword ptr ss : [esp + 0x24] // Height
+        fld     dword ptr ds : [MovieRect.AspectRatioX]
+        fmul    st(0), st(1)
+        fistp   dword ptr ds : [MovieRect.vW]
+        fistp   dword ptr ds : [MovieRect.vH]
+        fisub   dword ptr ds : [MovieRect.vW]
+        fld     dword ptr ds : [MovieRect.fTwo]
+        fdivp   st(1), st(0)
+        fistp   dword ptr ds : [MovieRect.vX]
+        jmp     MoviePlayerEnd
+
+    AspectRatioY :
+        // vW = R
+        // vH = R * (3 / 4)
+        // vX = 0
+        // vY = (B - vH) / 2
+        fild    dword ptr ss : [esp + 0x24] // Height
+        fild    dword ptr ss : [esp + 0x20] // Width
+        fld     dword ptr ds : [MovieRect.AspectRatioY]
+        fmul    st(0), st(1)
+        fistp   dword ptr ds : [MovieRect.vH]
+        fistp   dword ptr ds : [MovieRect.vW]
+        fisub   dword ptr ds : [MovieRect.vH]
+        fld     dword ptr ds : [MovieRect.fTwo]
+        fdivp   st(1), st(0)
+        fistp   dword ptr ds : [MovieRect.vY]
+        jmp     MoviePlayerEnd
+
+    MoviePlayerEnd :
+        mov     edx, dword ptr ds : [MovieRect.vH]
+        push    edx
+        mov     edx, dword ptr ds : [MovieRect.vW]
+        push    edx
+        mov     edx, dword ptr ds : [MovieRect.vY]
+        push    edx
+        mov     edx, dword ptr ds : [MovieRect.vX]
+        push    edx
+        jmp     MoviePlayerPCCodeCaveExit
+    }
+}
+
 void Init()
 {
     CIniReader iniReader("");
@@ -174,6 +244,9 @@ void Init()
 
         // XCamera::SetFromSceneCamera
         injector::MakeJMP(0x434576, SetFromSceneCameraCodeCave);
+
+        // MoviePlayerPC::Open
+        injector::MakeJMP(0x6B7013, MoviePlayerPCCodeCave);
     }
 
     if (LandmineLodFix)
