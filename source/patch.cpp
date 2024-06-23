@@ -14,6 +14,7 @@ struct Frustum
     float Bottom = -0.48f;
     float Top = 0.48f;
 } Frustum;
+struct Frustum ShrinkHUD = { -0.7f, 0.7f, -0.525f, 0.525f };
 struct MovieRect
 {
     int vX = 0;
@@ -67,8 +68,7 @@ void __declspec(naked) AspectRatioCodeCave()
         mov     Screen.Height, edx
         mov     edx, 0x7E0114
         fild    dword ptr ds : [Screen.Height]
-        fild    dword ptr ds : [Screen.Width]
-        fdivp   st(1), st(0)
+        fidiv   dword ptr ds : [Screen.Width]
         fld     dword ptr ds : [Screen.AspectRatioY]
         fcomip  st(0), st(1)
         fstp    st(0)
@@ -78,28 +78,30 @@ void __declspec(naked) AspectRatioCodeCave()
     AspectRatioX :
         jb      AspectRatioY
         fild    dword ptr ds : [Screen.Width]
-        fild    dword ptr ds : [Screen.Height]
-        fdivp   st(1), st(0)
-        fstp    dword ptr ds : [Screen.AspectRatioX]
-        fld     dword ptr ds : [Screen.AspectRatioX]
+        fidiv   dword ptr ds : [Screen.Height]
+        fst     dword ptr ds : [Screen.AspectRatioX]
+        fld     st(0)
+        fld     st(0)
         fmul    dword ptr ds : [Frustum.Bottom]
         fstp    dword ptr ds : [Frustum.Left]
-        fld     dword ptr ds : [Screen.AspectRatioX]
         fmul    dword ptr ds : [Frustum.Top]
         fstp    dword ptr ds : [Frustum.Right]
+        fmul    dword ptr ds : [ShrinkHUD.Top]
+        fstp    dword ptr ds : [ShrinkHUD.Right]
         jmp     AspectRatioCodeCaveExit
 
     AspectRatioY :
         fild    dword ptr ds : [Screen.Height]
-        fild    dword ptr ds : [Screen.Width]
-        fdivp   st(1), st(0)
-        fstp    dword ptr ds : [Screen.AspectRatioY]
-        fld     dword ptr ds : [Screen.AspectRatioY]
+        fidiv   dword ptr ds : [Screen.Width]
+        fst     dword ptr ds : [Screen.AspectRatioY]
+        fld     st(0)
+        fld     st(0)
         fmul    dword ptr ds : [Frustum.Left]
         fstp    dword ptr ds : [Frustum.Bottom]
-        fld     dword ptr ds : [Screen.AspectRatioY]
         fmul    dword ptr ds : [Frustum.Right]
         fstp    dword ptr ds : [Frustum.Top]
+        fmul    dword ptr ds : [ShrinkHUD.Right]
+        fstp    dword ptr ds : [ShrinkHUD.Top]
         jmp     AspectRatioCodeCaveExit
     }
 }
@@ -215,10 +217,11 @@ void Init()
         injector::MakeJMP(0x4AB892, AspectRatioCodeCave);
 
         // AppDataService::InitScene
-        injector::MakeJMP(0x4ABCC3, FrustumCodeCave);                  // Background
-        injector::WriteMemory<FLOAT*>(0x4AC223, &Frustum.Right, true); // Menu Front
-        injector::WriteMemory<FLOAT*>(0x4AC246, &Frustum.Top, true);   // Menu Front
-        // ... shrink hud fix
+        injector::MakeJMP(0x4ABCC3, FrustumCodeCave);                    // Background
+        injector::WriteMemory<FLOAT*>(0x4AC223, &Frustum.Right, true);   // Menu Front
+        injector::WriteMemory<FLOAT*>(0x4AC246, &Frustum.Top, true);     // Menu Front
+        injector::WriteMemory<FLOAT*>(0x4AC218, &ShrinkHUD.Right, true); // SHRINKHUD
+        injector::WriteMemory<FLOAT*>(0x4AC23C, &ShrinkHUD.Top, true);   // SHRINKHUD
 
         // FrontEndService
         injector::WriteMemory<FLOAT>(0x5BE8E3, WXFE_ZBuffer_Scale, true); // Menu BG ZBuffer
@@ -230,9 +233,10 @@ void Init()
         injector::WriteMemory<FLOAT>(0x6C1A66, WXFE_ZBuffer_Scale, true); // Menu Tint
 
         // CameraManagerService::CameraManagerService
-        injector::WriteMemory<FLOAT*>(0x5A8CD7, &Frustum.Right, true); // HUD
-        injector::WriteMemory<FLOAT*>(0x5A8D10, &Frustum.Top, true);   // HUD
-        // ... shrink hud fix
+        injector::WriteMemory<FLOAT*>(0x5A8CD7, &Frustum.Right, true);   // HUD
+        injector::WriteMemory<FLOAT*>(0x5A8D10, &Frustum.Top, true);     // HUD
+        injector::WriteMemory<FLOAT*>(0x5A8CCD, &ShrinkHUD.Right, true); // SHRINKHUD
+        injector::WriteMemory<FLOAT*>(0x5A8D06, &ShrinkHUD.Top, true);   // SHRINKHUD
 
         // HudService::Initialize
         injector::WriteMemory<FLOAT>(0x54FBCA, HUD_Blank_Width, true);  // HUD Tint
@@ -240,7 +244,6 @@ void Init()
 
         // EfmvBorderEntity::EfmvBorderEntity
         injector::WriteMemory<FLOAT*>(0x54314A, &EFMV_Border_Width, true);
-        // ... shrink hud fix
 
         // XCamera::SetFromSceneCamera
         injector::MakeJMP(0x434576, SetFromSceneCameraCodeCave);
