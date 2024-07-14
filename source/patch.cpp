@@ -1,5 +1,8 @@
 #include "stdafx.h"
 
+float AspectRatio43 = 4.0f / 3.0f;
+float AspectRatio34 = 3.0f / 4.0f;
+float F2 = 2.0f;
 struct Screen
 {
     int Width = 800;
@@ -9,11 +12,12 @@ struct Screen
 } Screen;
 struct Frustum
 {
-    float Left = -0.64f;
-    float Right = 0.64f;
-    float Bottom = -0.48f;
-    float Top = 0.48f;
-} Frustum;
+    float Left;
+    float Right;
+    float Bottom;
+    float Top;
+};
+struct Frustum Frustum = { -0.64f, 0.64f, -0.48f, 0.48f };
 struct Frustum ShrinkHUD = { -0.7f, 0.7f, -0.525f, 0.525f };
 struct MovieRect
 {
@@ -21,9 +25,6 @@ struct MovieRect
     int vY = 0;
     int vW = 640;
     int vH = 480;
-    float AspectRatioX = 4.0f / 3.0f;
-    float AspectRatioY = 3.0f / 4.0f;
-    float fTwo = 2.0f;
 } MovieRect;
 bool AspectRatioFix, LandmineLodFix, EnableAllLanguages;
 uint8_t FrameInterval;
@@ -69,7 +70,7 @@ void __declspec(naked) AspectRatioCodeCave()
         mov     edx, 0x7E0114
         fild    dword ptr ds : [Screen.Height]
         fidiv   dword ptr ds : [Screen.Width]
-        fld     dword ptr ds : [Screen.AspectRatioY]
+        fld     dword ptr ds : [AspectRatio34]
         fcomip  st(0), st(1)
         fstp    st(0)
         jne     AspectRatioX
@@ -140,45 +141,45 @@ void __declspec(naked) SetFromSceneCameraCodeCave()
 void __declspec(naked) MoviePlayerPCCodeCave()
 {
     __asm {
-        fild    dword ptr ss : [esp + 0x24] // Bottom
-        fidiv   dword ptr ss : [esp + 0x20] // Right
-        fld     dword ptr ds : [MovieRect.AspectRatioY]
+        mov     edx, dword ptr ss : [esp + 0x20] // Right
+        mov     dword ptr ds : [MovieRect.vW], edx
+        mov     edx, dword ptr ss : [esp + 0x24] // Bottom
+        mov     dword ptr ds : [MovieRect.vH], edx
+        fild    dword ptr ds : [MovieRect.vH]
+        fidiv   dword ptr ds : [MovieRect.vW]
+        fld     dword ptr ds : [AspectRatio34]
         fcomip  st(0), st(1)
         fstp    st(0)
         jne     AspectRatioX
         jmp     MoviePlayerEnd
 
     AspectRatioX :
-        // vW = B * (4 / 3)
-        // vH = B
-        // vX = (R - vW) / 2
-        // vY = 0
+        // vW = B * (4 / 3)     vH = B
+        // vX = (R - vW) / 2    vY = 0
         jb      AspectRatioY
         fild    dword ptr ss : [esp + 0x20] // Width
         fild    dword ptr ss : [esp + 0x24] // Height
-        fld     dword ptr ds : [MovieRect.AspectRatioX]
+        fld     dword ptr ds : [AspectRatio43]
         fmul    st(0), st(1)
         fistp   dword ptr ds : [MovieRect.vW]
         fistp   dword ptr ds : [MovieRect.vH]
         fisub   dword ptr ds : [MovieRect.vW]
-        fld     dword ptr ds : [MovieRect.fTwo]
+        fld     dword ptr ds : [F2]
         fdivp   st(1), st(0)
         fistp   dword ptr ds : [MovieRect.vX]
         jmp     MoviePlayerEnd
 
     AspectRatioY :
-        // vW = R
-        // vH = R * (3 / 4)
-        // vX = 0
-        // vY = (B - vH) / 2
+        // vW = R    vH = R * (3 / 4)
+        // vX = 0    vY = (B - vH) / 2
         fild    dword ptr ss : [esp + 0x24] // Height
         fild    dword ptr ss : [esp + 0x20] // Width
-        fld     dword ptr ds : [MovieRect.AspectRatioY]
+        fld     dword ptr ds : [AspectRatio34]
         fmul    st(0), st(1)
         fistp   dword ptr ds : [MovieRect.vH]
         fistp   dword ptr ds : [MovieRect.vW]
         fisub   dword ptr ds : [MovieRect.vH]
-        fld     dword ptr ds : [MovieRect.fTwo]
+        fld     dword ptr ds : [F2]
         fdivp   st(1), st(0)
         fistp   dword ptr ds : [MovieRect.vY]
         jmp     MoviePlayerEnd
