@@ -281,6 +281,11 @@ void Init()
         injector::WriteMemory(0x6D2E08 + 1, GS.PeerChat.c_str(), true);
         injector::WriteMemory(0x6D2E57 + 1, GS.PeerChat.c_str(), true);
         injector::WriteMemory(0x6D2E93 + 1, GS.PeerChat.c_str(), true);
+
+        // Fix server browser mapname
+        injector::WriteMemory<BYTE>(0x673362 + 2, 0xF0, true); // [ebp-0x10]
+        // Fix server browser gametype
+        injector::WriteMemory<BYTE>(0x673425 + 2, 0xF0, true); // [ebp-0x10]
     }
 
     if (MotdUrl != "http://www.team17.com/gamespy/mayhem/motd/")
