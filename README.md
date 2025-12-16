@@ -2,7 +2,7 @@
 
 [![GitHub latest tag)](https://img.shields.io/github/v/tag/heatray/W4MPatch?label=latest)](https://github.com/heatray/W4MPatch/releases/latest)
 [![GitHub all releases](https://img.shields.io/github/downloads/heatray/W4MPatch/total)](https://github.com/heatray/W4MPatch/releases)
-[![Discord](https://img.shields.io/discord/455020679696482306?label=W4Tweaks&logo=discord&logoColor=white)](https://discord.gg/9Y6rKdBdpS "W4Tweaks Discord")
+[![Discord](https://img.shields.io/discord/455020679696482306?label=W4Tweaks&logo=discord&logoColor=white)](https://discord.gg/GvJ38qEEAQ)
 
 Unofficial patch for Worms 4 Mayhem.
 
