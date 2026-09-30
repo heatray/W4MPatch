@@ -56,3 +56,7 @@ project "W4M.Patch"
 project "W4M.Loader"
    files { "source/loader.cpp" }
    defines { "rsc_FileDescription=\"Loader for Worms 4 Mayhem\"" }
+
+project "W4M.Unlimiter"
+   files { "source/unlimiter.cpp" }
+   defines { "rsc_FileDescription=\"Unlimiter for Worms 4 Mayhem\"" }
