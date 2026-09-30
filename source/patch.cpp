@@ -1,6 +1,9 @@
 #include "stdafx.h"
+#include <mmsystem.h>
 
-bool AspectRatioFix, LandmineLodFix, EnableAllLanguages, Borderless;
+#pragma comment(lib, "winmm.lib")
+
+bool AspectRatioFix, LandmineLodFix, EnableAllLanguages, SleepFix, Borderless;
 uint8_t FrameInterval;
 struct XomApp
 {
@@ -144,6 +147,7 @@ void Init()
     AspectRatioFix = iniReader.ReadBoolean("Main", "AspectRatioFix", false);
     LandmineLodFix = iniReader.ReadBoolean("Main", "LandmineLodFix", false);
     EnableAllLanguages = iniReader.ReadBoolean("Main", "EnableAllLanguages", false);
+    SleepFix = iniReader.ReadBoolean("Main", "SleepFix", false);
     FrameInterval = iniReader.ReadInteger("Main", "FrameInterval", 16);
 
     HUD_SecondWeapon_Back_PosX = iniReader.ReadFloat("HUD", "SecondWeapon.Back.PosX", 220.0f);
@@ -218,6 +222,11 @@ void Init()
         injector::WriteMemory<BYTE>(0x4AD72A + 2, 0xC, true); // cmp eax, u12
         injector::MakeNOP(0x4AD736, 7);
         injector::WriteMemory<WORD>(0x4AD736, 0x07EB, true); // jmp 0x9
+    }
+
+    if (SleepFix)
+    {
+        timeBeginPeriod(1);
     }
 
     if (FrameInterval != 16)
